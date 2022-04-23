@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="vBox" alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fourinarow.FourInARowController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <GridPane fx:id="gridPane" gridLinesVisible="true" prefHeight="400.0" prefWidth="600.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#ColOneClick" prefHeight="85.0" prefWidth="91.0" text="1" GridPane.rowIndex="5" />
+                  <Button layoutX="10.0" layoutY="325.0" mnemonicParsing="false" onAction="#ColTwoClick" prefHeight="85.0" prefWidth="91.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Button layoutX="101.0" layoutY="325.0" mnemonicParsing="false" onAction="#ColThreeClick" prefHeight="85.0" prefWidth="91.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <Button layoutX="192.0" layoutY="325.0" mnemonicParsing="false" onAction="#ColFourClick" prefHeight="85.0" prefWidth="91.0" text="4" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                  <Button layoutX="283.0" layoutY="325.0" mnemonicParsing="false" onAction="#ColFiveClick" prefHeight="85.0" prefWidth="91.0" text="5" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                  <Button layoutX="374.0" layoutY="325.0" mnemonicParsing="false" onAction="#ColSixClick" prefHeight="85.0" prefWidth="91.0" text="6" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                  <Button layoutX="466.0" layoutY="325.0" mnemonicParsing="false" onAction="#ColSevenClick" prefHeight="85.0" prefWidth="91.0" text="7" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+                  <Button layoutX="283.0" layoutY="325.0" mnemonicParsing="false" onAction="#clear" prefHeight="85.0" prefWidth="91.0" text="Clear" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+   </children>
+    
+
+</VBox>
